@@ -14,6 +14,10 @@ An example which builds Example Password Hasher Plugin and adds it in to a custo
 
 A complex example using kickstart to stage a development FusionAuth environment.
 
+### light
+
+A lightweight Docker compose configuration used in guides to quickly spin up FusionAuth locally with configurations from a kickstart for demonstration with no need for OpenSearch.
+
 ### mailcatcher
 
 An example which stages a development FusionAuth environment including mailcatcher which allows FusionAuth to send transactional emails for account verification, password reset, and others in your development environment.
