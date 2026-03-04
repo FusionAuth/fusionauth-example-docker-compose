@@ -104,6 +104,206 @@
           }
         }
       }
+    },
+
+
+
+
+
+
+    {
+      "method": "POST",
+      "url": "/api/email/template/0502df1e-4010-4b43-b571-d423fce978b2",
+      "body": {
+        "emailTemplate": {
+          "defaultFromName": "FusionAuth Development",
+          "defaultSubject": "Reset your password",
+          "defaultHtmlTemplate": "@{emails/change-password.html.ftl}",
+          "defaultTextTemplate": "@{emails/change-password.txt.ftl}",
+          "fromEmail": "dev@fusionauth.io",
+          "name": "Forgot Password"
+        }
+      }
+    },
+    {
+      "method": "PATCH",
+      "url": "/api/tenant/#{defaultTenantId}",
+      "body": {
+        "tenant": {
+          "emailConfiguration": {
+            "forgotPasswordEmailTemplateId": "0502df1e-4010-4b43-b571-d423fce978b2"
+          }
+        }
+      }
+    },
+
+    {
+      "method": "POST",
+      "url": "/api/email/template/e160cc59-a73e-4d95-8287-f82e5c541a5c",
+      "body": {
+        "emailTemplate": {
+          "defaultFromName": "FusionAuth Development",
+          "defaultSubject": "Setup your password",
+          "defaultHtmlTemplate": "@{emails/setup-password.html.ftl}",
+          "defaultTextTemplate": "@{emails/setup-password.txt.ftl}",
+          "fromEmail": "dev@fusionauth.io",
+          "name": "Setup Password"
+        }
+      }
+    },
+    {
+      "method": "PATCH",
+      "url": "/api/tenant/#{defaultTenantId}",
+      "body": {
+        "tenant": {
+          "emailConfiguration": {
+            "setPasswordEmailTemplateId": "e160cc59-a73e-4d95-8287-f82e5c541a5c"
+          }
+        }
+      }
+    },
+
+    {
+      "method": "POST",
+      "url": "/api/email/template/7fa81426-42a9-4eb2-ac09-73c044d410b1",
+      "body": {
+        "emailTemplate": {
+          "defaultFromName": "FusionAuth Development",
+          "defaultSubject": "Verify your FusionAuth email address",
+          "defaultHtmlTemplate": "@{emails/email-verification.html.ftl}",
+          "defaultTextTemplate": "@{emails/email-verification.txt.ftl}",
+          "fromEmail": "dev@fusionauth.io",
+          "name": "Email Verification"
+        }
+      }
+    },
+    {
+      "method": "PATCH",
+      "url": "/api/tenant/#{defaultTenantId}",
+      "body": {
+        "tenant": {
+          "emailConfiguration": {
+            "verificationEmailTemplateId": "7fa81426-42a9-4eb2-ac09-73c044d410b1"
+          }
+        }
+      }
+    },
+
+    {
+      "method": "POST",
+      "url": "/api/email/template/c16b65a5-e6e9-4499-a7ac-ae228f8d9864",
+      "body": {
+        "emailTemplate": {
+          "defaultFromName": "FusionAuth Development",
+          "defaultSubject": "Verify your Registration",
+          "defaultHtmlTemplate": "@{emails/registration-verification.html.ftl}",
+          "defaultTextTemplate": "@{emails/registration-verification.txt.ftl}",
+          "fromEmail": "dev@fusionauth.io",
+          "name": "Registration Verification"
+        }
+      }
+    },
+
+    {
+      "method": "POST",
+      "url": "/api/email/template/fa6668cb-8569-44df-b0a2-8fcd996df915",
+      "body": {
+        "emailTemplate": {
+          "defaultFromName": "FusionAuth Development",
+          "defaultSubject": "Log into FusionAuth",
+          "defaultHtmlTemplate": "@{emails/passwordless-login.html.ftl}",
+          "defaultTextTemplate": "@{emails/passwordless-login.txt.ftl}",
+          "fromEmail": "dev@fusionauth.io",
+          "name": "Passwordless Login"
+        }
+      }
+    },
+    {
+      "method": "PATCH",
+      "url": "/api/tenant/#{defaultTenantId}",
+      "body": {
+        "tenant": {
+          "emailConfiguration": {
+            "passwordlessEmailTemplateId": "fa6668cb-8569-44df-b0a2-8fcd996df915"
+          }
+        }
+      }
+    },
+
+    {
+      "method": "POST",
+      "url": "/api/email/template/162b3719-3d71-4638-b9bf-f3e2093f7fe1",
+      "body": {
+        "emailTemplate": {
+          "defaultFromName": "FusionAuth Development",
+          "defaultSubject": "Notice of your consent",
+          "defaultHtmlTemplate": "@{emails/coppa-notice.html.ftl}",
+          "defaultTextTemplate": "@{emails/coppa-notice.txt.ftl}",
+          "fromEmail": "dev@fusionauth.io",
+          "name": "COPPA Notice"
+        }
+      }
+    },
+
+
+    {
+      "method": "POST",
+      "url": "/api/email/template/f0e9d738-c98d-45ee-b869-8636342c5158",
+      "body": {
+        "emailTemplate": {
+          "defaultFromName": "FusionAuth Development",
+          "defaultSubject": "Reminder: Notice of your consent",
+          "defaultHtmlTemplate": "@{emails/coppa-email-plus-notice.html.ftl}",
+          "defaultTextTemplate": "@{emails/coppa-email-plus-notice.txt.ftl}",
+          "fromEmail": "dev@fusionauth.io",
+          "name": "COPPA Notice Reminder"
+        }
+      }
+    },
+
+
+    {
+      "method": "POST",
+      "url": "/api/email/template/e6c74b53-d43d-471e-ae7e-906456d0f341",
+      "body": {
+        "emailTemplate": {
+          "defaultFromName": "FusionAuth Development",
+          "defaultSubject": "Your password is not secure",
+          "defaultHtmlTemplate": "@{emails/breached-password.html.ftl}",
+          "defaultTextTemplate": "@{emails/breached-password.txt.ftl}",
+          "fromEmail": "dev@fusionauth.io",
+          "name": "Breached Password Notification"
+        }
+      }
+    },
+
+    {
+      "method": "POST",
+      "url": "/api/email/template/95392509-e501-4efa-a237-5aa2617965f6",
+      "body": {
+        "emailTemplate": {
+          "defaultFromName": "FusionAuth Development",
+          "defaultSubject": "Your second factor code",
+          "defaultHtmlTemplate": "@{emails/2fa.html.ftl}",
+          "defaultTextTemplate": "@{emails/2fa.txt.ftl}",
+          "fromEmail": "dev@fusionauth.io",
+          "name": "Two Factor Authentication"
+        }
+      }
+    },
+    {
+      "method": "PATCH",
+      "url": "/api/tenant/#{defaultTenantId}",
+      "body": {
+        "tenant": {
+          "emailConfiguration": {},
+          "multiFactorConfiguration": {
+            "email": {
+              "templateId": "95392509-e501-4efa-a237-5aa2617965f6"}
+          }
+        }
+      }
     }
+
   ]
 }
